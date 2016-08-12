@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{F1DF501E-D636-4D5E-8F67-8B381DC456E0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>UnityEditor.Graphs</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine" />
+    <Reference Include="System.Core" />
+    <Reference Include="UnityEditor" />
+    <Reference Include="System" />
+    <Reference Include="nunit.framework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationBlendTree\Graph.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationBlendTree\GraphGUI.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationBlendTree\Node.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\AddStateMachineBehaviourComponentWindow.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\AnimatorDefaultTransitionInspector.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\AnimatorStateTransitionInspector.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\AnimatorTransitionInspector.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\AnimatorTransitionInspectorBase.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\AnyStateNode.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\AnyStateNodeInspector.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\EdgeDebugState.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\EdgeGUI.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\EdgeInfo.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\EdgeType.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\EntryNode.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\EntryNodeInspector.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\ExitNode.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\ExitNodeInspector.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\Graph.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\GraphGUI.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\InvalidStateMachineBehaviour.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\InvalidStateMachineBehaviourEditor.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\Node.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\SourceNodeTransitionEditor.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\StateEditor.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\StateMachineBehaviorsEditor.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\StateMachineBehaviourEditor.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\StateMachineInspector.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\StateMachineNode.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\StateNode.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\TransitionEditionContext.cs" />
+    <Compile Include="UnityEditor.Graphs.AnimationStateMachine\TransitionType.cs" />
+    <Compile Include="UnityEditor.Graphs\AnimationCurveTypeConverter.cs" />
+    <Compile Include="UnityEditor.Graphs\AnimatorControllerCallback.cs" />
+    <Compile Include="UnityEditor.Graphs\AnimatorControllerTool.cs" />
+    <Compile Include="UnityEditor.Graphs\DummyCachedNullType.cs" />
+    <Compile Include="UnityEditor.Graphs\DummyNullType.cs" />
+    <Compile Include="UnityEditor.Graphs\Edge.cs" />
+    <Compile Include="UnityEditor.Graphs\EdgeGUI.cs" />
+    <Compile Include="UnityEditor.Graphs\EnumTypeConverter.cs" />
+    <Compile Include="UnityEditor.Graphs\Explore.cs" />
+    <Compile Include="UnityEditor.Graphs\GenericFloatVarsTypeConverter.cs" />
+    <Compile Include="UnityEditor.Graphs\Graph.cs" />
+    <Compile Include="UnityEditor.Graphs\GraphGUI.cs" />
+    <Compile Include="UnityEditor.Graphs\GraphsTypeConverter.cs" />
+    <Compile Include="UnityEditor.Graphs\GroupNode.cs" />
+    <Compile Include="UnityEditor.Graphs\IAnimatorControllerEditor.cs" />
+    <Compile Include="UnityEditor.Graphs\IAnimatorControllerSubEditor.cs" />
+    <Compile Include="UnityEditor.Graphs\IEdgeGUI.cs" />
+    <Compile Include="UnityEditor.Graphs\LayerControllerView.cs" />
+    <Compile Include="UnityEditor.Graphs\LayerSettingsWindow.cs" />
+    <Compile Include="UnityEditor.Graphs\Node.cs" />
+    <Compile Include="UnityEditor.Graphs\ParameterControllerEditor.cs" />
+    <Compile Include="UnityEditor.Graphs\ParameterControllerView.cs" />
+    <Compile Include="UnityEditor.Graphs\Property.cs" />
+    <Compile Include="UnityEditor.Graphs\ProxyNode.cs" />
+    <Compile Include="UnityEditor.Graphs\SerializedType.cs" />
+    <Compile Include="UnityEditor.Graphs\Slot.cs" />
+    <Compile Include="UnityEditor.Graphs\SlotType.cs" />
+    <Compile Include="UnityEditor.Graphs\SpecialNames.cs" />
+    <Compile Include="UnityEditor.Graphs\Styles.cs" />
+    <Compile Include="UnityEditor.Graphs\TopologicalSort.cs" />
+    <Compile Include="UnityEditor.Graphs\TypeSelector.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
